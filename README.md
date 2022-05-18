@@ -1,6 +1,6 @@
 # Add description
 
-This app is a example prototype of app structure. 
+This app is an example prototype of app structure. 
 It is a bike rental app. There should be a map with all rental bikes.
 When a bike is clicked it should display detailed information about it.
 

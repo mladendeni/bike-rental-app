@@ -62,26 +62,6 @@ const Header = () => {
         <AppBar position="static">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <TwoWheelerIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="a"
-                        onClick={() => { handleNavItemClick('/'); }}
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'none', md: 'flex' },
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.2rem',
-                            color: 'inherit',
-                            textDecoration: 'none',
-                            cursor: 'pointer'
-                        }}
-                    >
-                        BIKE RENT
-                    </Typography>
-
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -118,26 +98,30 @@ const Header = () => {
                             ))}
                         </Menu>
                     </Box>
-                    <TwoWheelerIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-                    <Typography
-                        variant="h5"
-                        noWrap
-                        component="a"
-                        onClick={() => { handleNavItemClick('/'); }}
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'flex', md: 'none' },
-                            flexGrow: 1,
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: 'inherit',
-                            textDecoration: 'none',
-                            cursor: 'pointer'
-                        }}
-                    >
-                        BIKE RENT
-                    </Typography>
+
+                    <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center' }}>
+                        <TwoWheelerIcon sx={{ display: 'flex', mr: 1 }} />
+                        <Typography
+                            variant="h5"
+                            noWrap
+                            component="a"
+                            onClick={() => { handleNavItemClick('/'); }}
+                            sx={{
+                                mr: 2,
+                                display: 'flex',
+                                flexGrow: 1,
+                                fontFamily: 'monospace',
+                                fontWeight: 700,
+                                letterSpacing: '.3rem',
+                                color: 'inherit',
+                                textDecoration: 'none',
+                                cursor: 'pointer'
+                            }}
+                        >
+                            BIKE RENT
+                        </Typography>
+                    </Box>
+                    
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
                             <Button

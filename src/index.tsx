@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import App from './App';
+import AppTemplate from './template/AppTemplate';
 import reportWebVitals from './reportWebVitals';
 
 import './index.scss';
@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <App />
+    <AppTemplate />
   </React.StrictMode>
 );
 
